@@ -4,13 +4,13 @@ console.log(galleryItems);
 
 const galleryBox = document.querySelector('.gallery');
 
-galleryItems.forEach( element => {
+galleryItems.forEach(element => {
     const galleryItem = document.createElement('div');
     galleryItem.classList.add('gallery__item');
 
     const galleryLink = document.createElement('a');
     galleryLink.classList.add('gallery__link');
-    galleryLink.href = photo.original;
+    galleryLink.href = element.original;
 
     const galleryImage = document.createElement('img');
     galleryImage.classList.add('gallery__image');
