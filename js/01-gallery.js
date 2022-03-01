@@ -1,5 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
+console.log(galleryItems);
 
 const galleryBox = document.querySelector('.gallery');
 
@@ -22,7 +23,7 @@ galleryItems.forEach( element => {
     galleryLink.append(galleryImage);
 });
 
-galleryBox.addEventListener('click', e => {
-    e.preventDefault();
-    basicLightbox.create(`<img width="1280" src = ${e.target.dataset.source}>`).show();
+galleryBox.addEventListener('click', event => {
+    event.preventDefault();
+    basicLightbox.create(`<img src = ${event.target.dataset.source}>`).show();
 });
