@@ -1,7 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-const galleryBox = document.querySelector('div.gallery');
+const galleryBox = document.querySelector('.gallery');
 
 galleryItems.forEach( element => {
     const galleryItem = document.createElement('div');
