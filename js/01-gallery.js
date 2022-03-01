@@ -24,5 +24,5 @@ galleryItems.forEach( element => {
 
 galleryBox.addEventListener('click', e => {
     e.preventDefault();
-    basicLightbox.create('<img width="1280" src = ${e.target.dataset.source}>').show();
+    basicLightbox.create(`<img width="1280" src = ${e.target.dataset.source}>`).show();
 });
