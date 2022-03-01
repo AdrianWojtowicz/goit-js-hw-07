@@ -22,6 +22,6 @@ galleryItems.forEach(element => {
 
 const lightbox = new SimpleLightbox('.gallery a', {
     captionSelector: 'img',
-    captionData: 'alt',
+    captionsData: 'alt',
     captionDelay: 250,
 });
